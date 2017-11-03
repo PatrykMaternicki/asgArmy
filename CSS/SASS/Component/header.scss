@@ -1,0 +1,74 @@
+
+.header-image-wraper{
+  margin:auto;
+  text-align:center;
+}
+.siema {
+  margin:0;
+  position:relative;
+}
+.header-logo{
+  width:400px;
+  height:auto;
+}
+.header-text{
+  color:white;
+  font-size:4vw;
+  font-family: 'bronx';
+}
+.header-slider-image{
+  width:100%;
+  height:100vh;
+}
+.header-outer{
+  text-align:center;
+  width:100%;
+  margin:auto;
+  top:25%;
+  position:absolute;
+}
+.nav{
+  width:90%;
+  margin:auto;
+}
+
+.nav-list
+{
+  font-family: 'Montserrat', sans-serif;
+  display:flex;
+  justify-content: space-between;
+  width:60%;
+  padding-left:25px;
+}
+
+.nav-image-wraper{
+  float:left;
+  margin-top:0.7%;
+}
+.nav-image-wraper--right{
+  float:right;
+}
+.nav-item{
+    padding:20px 0px 20px 0px;
+    flex-basis:25%;
+    text-align:center;
+    font-size:1.2vw;
+    color:white;
+}
+.nav-item-active{
+  background: #787346;
+}
+
+.nav-list .nav-item:focus , .nav-item:hover {
+  background: #787346;
+  cursor:pointer;
+  color:white;
+}
+.nav-container{
+  position:fixed;
+  top:0px;
+  width:100%;
+  background:black;
+  opacity:0.9;
+  z-index:999;
+}
