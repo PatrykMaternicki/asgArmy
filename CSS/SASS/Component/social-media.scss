@@ -2,9 +2,15 @@
   position:fixed;
   right:0px;
   top:50vh;
+  width:7%;
+  font-size:2vw !important;
+  z-index:999;
+}
+
+.stick-social-wraper{
   background:white;
-  width:4%;
   height:67px;
+  width:60%;
   -webkit-border-top-left-radius: 360px;
   -webkit-border-bottom-left-radius: 360px;
   -moz-border-radius-topleft: 360px;
@@ -17,12 +23,38 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-align:center;
+  border-top:5px solid #f5f8f9;
+  border-bottom:5px solid #f5f8f9;
+  border-left:5px solid #f5f8f9;
+  float:right;
 }
-.stick-social-container:hover , .stick-social-container:focus{
-  width:7%;
+.stick-social-wraper:last-child{
+  margin-top:25px;
+}
+.stick-social-wraper:hover, .stick-social-wraper:focus{
+  width:100%;
+}
+.stick-social-wraper:hover .stick-social-icon{
+   color:#503B18;
+}
+.stick-social-wraper:focus .stick-social-icon{
+   color:#503B18;
 }
 .stick-social-icon{
   color:white;
-  font-size:1vw;
   font-family: 'bronx';
+  line-height:63px;
+}
+.stick-social-icon--anotherHeight{
+  color:white;
+  line-height:64px;
+}
+
+.stick-social-wraper:hover .stick-social-icon--anotherHeight{
+ color:#503B18;
+}
+
+.stick-social-wraper:focus .stick-social-icon--anotherHeight{
+ color:#503B18;
 }

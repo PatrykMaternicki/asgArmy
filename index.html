@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
      <link rel="stylesheet" href="CSS/style.min.css" type="text/css">
      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <script type="text/javascript"
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqnLM1SVrvL3kQshw_XDulLz383P6vig">
+     </script>
+
+
   </head>
   <body>
+
     <header class='header siema'>
       <img class="header-slider-image" src="./Image/test.jpg" alt="nasza druzyna" />
       <img class="header-slider-image" src="./Image/slider1.jpg" alt="nasza druzyna"/>
       <img class="header-slider-image" src="./Image/slider2.jpg" alt="nasza druzyna"/>
       <img class="header-slider-image" src="./Image/slider3.jpg" alt="nasza druzyna"/>
     </header>
+
     <section class="header-outer" />
     <a href="index.html"><img src="./Image/mock.png" alt="logo grupy" /></a>
     <p class="header-text">Zolnierze polnocy wzywaja</p>
   </section>
+
     <section class="nav-container">
 
       <nav class="nav">
@@ -37,10 +47,15 @@
     </section>
     <aside class="stick-social-container">
       <div class="stick-social-wraper">
-        <p class="stick-social-icon">FB</p>
+        <p class="stick-social-icon"><a href="">FB</a></p>
+      </div>
+      <div class="stick-social-wraper">
+        <p class="stick-social-icon--anotherHeight"><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
       </div>
     </aside>
+
     <main class="main">
+
       <aside class="aside">
         <div>
           <p class="aside-title">Nadchodzace wydarzaenia</p>
@@ -119,8 +134,45 @@
         </article>
       </section>
     </main>
-      <footer>
-      </footer>
+    <footer class="footer-container">
+      <section class="footer-wraper">
+        <address class="address-container">
+            <h2 class="address-title">Kontakt</h2>
+          <dl>
+            <div class="address-wraper">
+            <dt>
+              <img src="./Image/phone-call.png" width="56px" height="56px" alt-""/>
+              Telefon
+            </dt>
+            <dd>
+              909209022
+            </dd>
+          </div>
+          <div class="address-wraper">
+            <dt>
+              <img src="./Image/email.png" width="56px" height="56px" alt=""/>
+              Email
+            </dt>
+            <dd><a href=""/>patryk.maternicki@gmail.com</a>
+            </dd>
+          </div>
+          <div class="address-wraper">
+            <dt>
+              <img src="./Image/group.png" width="56px" height="56px" alt=""/>
+              Miejsce zbiorek
+            </dt>
+            <dd>Gdańsk ul.Podwale Grodzkie 2c</dd>
+          </div>
+          </dl>
+        </address>
+        <div class="map-wraper">
+        <div id="map" class="map" />
+        </div>
+      </section>
+
+
+    </footer>
+    <script src="./JS/googleMapsApi.js"></script>
       <script src="./JS/siema.min.js"></script>
       <script src="./JS/siemaImpl.js"></script>
   </body>
