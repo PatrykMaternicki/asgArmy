@@ -9,7 +9,7 @@
 
 .stick-social-wraper{
   background:white;
-  height:8vh;
+  height:6vw;
   width:67%;
   -webkit-border-top-left-radius: 360px;
   -webkit-border-bottom-left-radius: 360px;
@@ -44,7 +44,7 @@
 .stick-social-icon{
   color:white;
   font-family: 'bronx';
-  line-height:8vh;
+  line-height:6vw;
   padding-left:13%;
 }
 
@@ -54,7 +54,7 @@
 a .fa{
   font-size:3vw;
   padding:0;
-  line-height: 8vh;
+  line-height: 6vw;
 }
 .stick-social-wraper:hover .stick-social-icon--anotherHeight{
  color:#503B18;
@@ -77,11 +77,16 @@ a .fa{
   .stick-social-container{
     width:14%;
   }
+  .stick-social-container , .stick-social-wraper{
+    height:6vw;
+  }
   .stick-social-icon a {
-  font-size:4.5vw
+  font-size:4.5vw;
+  line-height:6vw;
   }
   a .fa{
     font-size:5vw;
+    line-height: 5.5vw;
   }
 }
 
@@ -89,11 +94,19 @@ a .fa{
   .stick-social-container{
     width:18%;
   }
+  .stick-social-container, .stick-social-wraper{
+    height: 8vw;
+  }
+  .stick-social-icon{
+    line-height: 8vw;
+  }
   .stick-social-icon a{
     font-size:6.5vw;
+    line-height: 8vw;
   }
   a .fa{
     font-size: 7vw;
+    line-height: 7.5vw;
   }
 }
 
@@ -101,10 +114,15 @@ a .fa{
   .stick-social-container{
     width:22%;
   }
+  .stick-social-wraper, .stick-social-container{
+    height:12vw !important;
+  }
   .stick-social-icon a{
     font-size:8.5vw;
+    line-height: 12vw;
   }
   a .fa{
-    font-size: 9vw;
+    font-size: 9vw ;
+    line-height: 12vw !important;
   }
 }
