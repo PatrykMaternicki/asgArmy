@@ -34,7 +34,10 @@
   width:90%;
   margin:auto;
 }
-
+.nav-image{
+  width:3vw;
+  height:3vw;
+}
 .nav-list
 {
   font-family: 'Montserrat', sans-serif;
@@ -46,13 +49,16 @@
 
 .nav-image-wraper{
   float:left;
-  margin-top:0.7%;
+  margin-top:0.15vw;
 }
 .nav-image-wraper--right{
   float:right;
 }
+.nav-logo{
+  width:4vw;
+}
 .nav-item{
-    padding:20px 0px 20px 0px;
+    padding:1.1vw 0px 1.1vw 0px;
     flex-basis:25%;
     text-align:center;
     font-size:1.2vw;
