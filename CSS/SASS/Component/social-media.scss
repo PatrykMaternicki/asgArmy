@@ -73,6 +73,11 @@ a .fa{
 
 }
 
+@media (max-width:800px){
+  .stick-social-container{
+    top:60vw;
+  }
+}
 @media (max-width:700px){
   .stick-social-container{
     width:14%;
