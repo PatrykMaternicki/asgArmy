@@ -7,9 +7,7 @@ html{
 body{
   background: #F7F7F7;
   min-height: 100%;
-  height:auto;
-  position:relative;
-  display:inline-block;
+  height:100%;
 }
 
 
@@ -25,5 +23,5 @@ button{
 .main{
   width:90%;
   display:inline-block;
-  margin: 0 5% 45vh 5%;
+  margin: 0 5% 5% 5%;
 }
