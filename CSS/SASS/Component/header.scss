@@ -81,6 +81,27 @@
     top:20vh;
   }
 }
+@media (max-width:1100px) and (orientation:portrait){
+  .header{
+    height:50vw;
+  }
+  .header-outer{
+    top:10vw !important;
+  }
+}
+
+@media (max-width:600px) and (orientation:portrait){
+  .header-outer{
+    top:20vw !important;
+  }
+  .header-outer-image{
+    width:50%;
+  }
+  .header-text{
+    font-size: 5vw;
+  }
+
+}
 @media (max-width:1200px){
   .header-outer{
     top:30vh;
