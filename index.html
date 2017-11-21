@@ -6,10 +6,14 @@
      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     <script type="text/javascript"
+     <script type="text/javascript" defer async
      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqnLM1SVrvL3kQshw_XDulLz383P6vig">
      </script>
-
+     <script
+     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+     crossorigin="anonymous">
+   </script>
 
   </head>
   <body>
@@ -160,7 +164,7 @@
     </main>
     <footer class="footer-container">
       <section class="footer-wraper">
-        <address class="address-container">
+        <address id="address" class="address-container">
             <h2 class="address-title">Kontakt</h2>
           <dl>
             <div class="address-wraper">
@@ -180,18 +184,20 @@
             <dd><a href=""/>patryk.maternicki@gmail.com</a>
             </dd>
           </div>
-          <div class="address-wraper">
+          <div  class="address-wraper">
             <dt>
               <img src="./Image/group.png" width="56px" height="56px" alt=""/>
               Miejsce zbiorek
             </dt>
-            <dd>Gdańsk ul.Podwale Grodzkie 2c</dd>
+            <dd>Gdańsk ul.Podwale Grodzkie 2c </dd><span class="address-outer--checkMap" id="map-checker-button"><button><img src="./Image/looking-glass.png" alt="Kliknij by zobaczyć mapę" /> Zobacz na mapie</button></span>
           </div>
           </dl>
         </address>
-        <div class="map-wraper">
-        <div id="map" class="map" />
+        <div id="map-wraper" style="visibility:hidden" style="width:0%" class="map-wraper">
+        <div id="map" class="map">
         </div>
+        <button id="map-checker-button--return" class='map-button'><img class='map-image-eye' src='Image/eye.png' width='32px' height='32px' alt=''/><span class='map-button--span'>Schowaj mape</span></button>
+
       </section>
 
 
@@ -199,5 +205,6 @@
     <script src="./JS/googleMapsApi.js"></script>
       <script src="./JS/siema.min.js"></script>
       <script src="./JS/siemaImpl.js"></script>
+      <script src="./JS/googleMapAnimation.js"></script>
   </body>
 </html>
