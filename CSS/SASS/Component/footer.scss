@@ -3,7 +3,6 @@
     display:inline-block;
     background:white;
     width:100%;
-    transform: translateY(-1px);
 }
 
 .footer-wraper{
@@ -40,8 +39,8 @@
   font-size:2vw;
 }
 .map-image-eye{
-  width:6%;
   padding-right:5%;
+  vertical-align: top;
 }
 .address-title{
   font-size:1.6vw;
@@ -53,6 +52,7 @@
 .address-container{
   width:38%;
   float:left;
+  height:345px;
 }
 .address-wraper{
   width:100%;
@@ -122,12 +122,16 @@
   .address-wraper dd{
     width:53%;
   }
+  .address-outer--checkMap{
+    width:97%;
+  }
+  .address-outer--checkMap button{
+    font-size:1.2vw;
+  }
 }
 
 @media (max-width:600px){
-  .map-wraper{
-    display:none;
-  }
+
   .address-container{
     width:95%;
     margin:auto;
@@ -137,5 +141,11 @@
   }
   .address-wraper{
     font-size:2.2vw;
+  }
+  .address-outer--checkMap{
+    width:87%;
+  }
+  .address-outer--checkMap button{
+    font-size:1.4vw;
   }
 }
