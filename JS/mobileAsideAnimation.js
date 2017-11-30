@@ -1,6 +1,9 @@
 document.getElementById('button-to-transformMobileAside').addEventListener ('click',(e)=>{this.animateAside(e);})
 
 function animateAside(e){
+  if (window.outerWidth > 800){
+    console.log("HEHEHEH");
+  }
   console.log($("#aside-container").data());
   if (menuIsClose()){
     transformRight($("#mobile-event-wraper"));

@@ -128,6 +128,9 @@
     font-family: 'Montserrat', sans-serif;
     color:white;
     float:right;
+    border-right-style: dotted;
+    border-right-color: white;
+    border-right-width: 1px;
   }
   .mobile-aside-wraper{
     width: 28%;
@@ -142,6 +145,8 @@
     padding-bottom:10% !important;
     border-bottom: 1px dotted white;
     margin-bottom: 13% !important;
+    width:93%;
+    margin:auto;
   }
   .aside-event-container:after{
     padding:0;
@@ -180,6 +185,30 @@
     border:inherit;
     background:#716D32;
   }
-
-
+  @media (max-width:600px){
+    .mobile-aside-wraper{
+      width:35%;
+    }
+    .event-title{
+      font-size:1.9vw;
+    }
+    .event-item{
+      font-size:1.9vw;
+      width:83%;
+    }
+    .event-item-link{
+      font-size:inherit !important;
+    }
+  }
+  @media (max-width:400px){
+    .mobile-aside-wraper{
+      width:45%;
+    }
+    .event-title{
+      font-size:2.4vw;
+    }
+    .event-item{
+      font-size:2.4vw;
+    }
+  }
 }
