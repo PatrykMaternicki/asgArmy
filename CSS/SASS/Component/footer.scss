@@ -146,6 +146,23 @@
     width:87%;
   }
   .address-outer--checkMap button{
-    font-size:1.4vw;
+    font-size:1.6vw;
+  }
+  .map-button{
+    width:50vw;
+  }
+  .map-button--span{
+    font-size:4vw;
+  }
+}
+@media (max-width:400px){
+  .map-button{
+    width:85vw;
+  }
+  .map-button--span{
+    font-size:8vw;
+  }
+  .address-outer--checkMap button{
+    font-size:2.5vw;
   }
 }
