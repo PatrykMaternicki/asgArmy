@@ -4,8 +4,8 @@ document.getElementById('map-checker-button--return').addEventListener('click',s
 function switchDisplayMap(){
   var DOMmapContainer = $('#map-wraper');
   DOMmapContainer.css("visibility","visible");
-  changeSizeMap(DOMmapContainer,"0%");
-  transformAddressContainer(0);
+  changeSizeMap(DOMmapContainer,"1%");
+  transformAddressContainer(1);
 
 }
 
@@ -34,11 +34,11 @@ function splitValue(percentWidth,symbol){
 }
 
 function increaseValue(value){
-  return ++value;
+  return value+10;
 }
 
 function decreaseValue(transformValue){
-  return --transformValue;
+  return transformValue-10;
 }
 
 function mapHad100Percent(percentValue){
@@ -49,7 +49,7 @@ function mapHad50Percent(percentValue){
 }
 
 function transformIsEqual0(value){
-   return value == 0;
+   return value >= 0;
 }
 
 function transformAddressContainer(transformValue){

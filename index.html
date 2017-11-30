@@ -60,8 +60,8 @@
 
     <main class="main">
 
-      <section style="display:none"class="mobile-aside-container">
-        <aside class="mobile-aside-wraper">
+      <section id="aside-container" class="mobile-aside-container">
+        <aside id="mobile-event-wraper" class="mobile-aside-wraper">
           <section>
             <div class="aside-event-container">
               <p class="event-title">Wymysl jakas nazwe eventu</p>
@@ -79,8 +79,8 @@
             </div>
           </section>
       </aside>
-        <div class="aside-button" aria-type="button">
-          <img src="./Image/right-arrow.png" class="aside-button-arrow" alt="" width="32px" height="32px" /> Wydarzenia
+        <div class="aside-button" id="button-to-transformMobileAside" aria-type="button">
+          <img id="arrow" src="./Image/right-arrow.png" class="aside-button-arrow" alt="" width="32px" height="32px" /> <span id="text-button">Wydarzenia</span>
         </div>
 
       </section>
@@ -203,6 +203,7 @@
 
     </footer>
     <script src="./JS/googleMapsApi.js"></script>
+      <script src="./JS/mobileAsideAnimation.js"></script>
       <script src="./JS/siema.min.js"></script>
       <script src="./JS/siemaImpl.js"></script>
       <script src="./JS/googleMapAnimation.js"></script>
