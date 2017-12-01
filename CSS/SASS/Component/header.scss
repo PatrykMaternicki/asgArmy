@@ -96,6 +96,33 @@
   }
 
 }
+@media (max-width:800px){
+  .nav-container{
+    height:8vw;
+  }
+  .nav-image{
+    width:7.5vw;
+    height:auto;
+    vertical-align: top;
+  }
+  .nav-image-wraper{
+    width:22%;
+    line-height:8vw;
+    height:8vw;
+  }
+  .nav-image-wraper:after{
+    content:"menu";
+    padding-left:0.5%;
+    font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    line-height:8vw;
+    height:8vw;
+  }
+  .nav-list{
+    display:none;
+  }
+}
 
 @media (max-width:600px) and (orientation:portrait){
   .header-outer{
