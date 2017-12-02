@@ -184,6 +184,12 @@
 }
 
 @media (max-width:400px){
+  .nav-image-wraper{
+    width:35%;
+  }
+  .nav-image-wraper:after{
+    font-size:6vw;
+  }
   .header-outer{
     top:14vw;
   }

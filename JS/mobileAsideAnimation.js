@@ -1,9 +1,6 @@
 document.getElementById('button-to-transformMobileAside').addEventListener ('click',(e)=>{this.animateAside(e);})
 
 function animateAside(e){
-  if (window.outerWidth > 800){
-    console.log("HEHEHEH");
-  }
   console.log("I CHUJ" + menuIsClose() +" A to kurwa " + mobileMenuIsOpen());
   if (menuIsClose() && mobileMenuIsOpen()){
     closeMenu();
@@ -21,6 +18,7 @@ function animateAside(e){
     recoveryArrow();
   }
   else{
+    console.log("Robisz to chuju?");
     transformLeft($("#mobile-event-wraper"),1);
     transformLeft($("#button-to-transformMobileAside"),1);
     rotateArrow(0);
@@ -54,13 +52,17 @@ function transformRight(element){
   if (elementHaveId(element,"button-to-transformMobileAside") && !animationFrameWasVisisted(element)){
     returnToStateCloseMenu(element);
   }
+  console.log("CO jest kurwa" + window.innerWidth);
  let value = element.data("transform-value");
- console.log(value);
  let newValue = decreaseValue(value);
  element.data("transform-value",newValue);
  element.css("transform","translateX(" + newValue  + "%" +")");
- console.log(element[0]);
  if (isEqual0(newValue)){
+   if (elementHaveId(element,"button-to-transformMobileAside")){
+      element.css("transform","translateX(" + 1 + "px" +")");
+      recoverySizeProperties();
+      return;
+   }
    element.css("transform","translateX(" + 0  + "%" +")");
    recoverySizeProperties();
    return;
@@ -70,6 +72,10 @@ function transformRight(element){
 
 
 function transformLeft(element,value){
+  if  (elementHaveId(element,"button-to-transformMobileAside") && window.innerWidth <= 500){
+    console.log("Jestes tu?");
+    element.css("width","auto");
+  }
 value = value+10;
 element.css("transform","translateX(" + value  + "%" +")");
   if (value >= 100){
