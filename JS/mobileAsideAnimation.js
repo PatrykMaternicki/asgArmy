@@ -4,7 +4,17 @@ function animateAside(e){
   if (window.outerWidth > 800){
     console.log("HEHEHEH");
   }
-  console.log($("#aside-container").data());
+  console.log("I CHUJ" + menuIsClose() +" A to kurwa " + mobileMenuIsOpen());
+  if (menuIsClose() && mobileMenuIsOpen()){
+    closeMenu();
+    transformRight($("#mobile-event-wraper"));
+    transformRight($("#button-to-transformMobileAside"));
+    recoveryArrow();
+    $("#mobile-menu").data("mobile-menu-is-open",false);
+    $("#aside-container").data("menu-close",true);
+    return;
+  }
+
   if (menuIsClose()){
     transformRight($("#mobile-event-wraper"));
     transformRight($("#button-to-transformMobileAside"));

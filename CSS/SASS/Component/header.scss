@@ -81,6 +81,16 @@
   opacity:0.9;
   z-index:999;
 }
+.nav-list--mobileMenu{
+  width: 100%;
+  display: block;
+  padding: 0;
+  transform: translateY(-1px);
+  font-family: 'Montserrat', sans-serif;
+}
+.nav--fullWidth{
+  width:100%;
+}
 
 @media (max-width:1600px){
   .header-outer{
@@ -97,6 +107,9 @@
 
 }
 @media (max-width:800px){
+  .nav-logo{
+    display:none;
+  }
   .nav-container{
     height:8vw;
   }
@@ -119,9 +132,16 @@
     line-height:8vw;
     height:8vw;
   }
+  .nav-item{
+    background:black;
+    font-size:2.7vw;
+    padding:2vw 0px 2vw 0px;
+    background:black;
+  }
   .nav-list{
     display:none;
   }
+
 }
 
 @media (max-width:600px) and (orientation:portrait){
