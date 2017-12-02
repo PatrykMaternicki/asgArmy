@@ -17,7 +17,7 @@
 
   </head>
   <body>
-
+    <script id="fbscript" src="./JS/facebookApiLoader.js"></script>
     <header class='header siema'>
       <img class="header-slider-image" src="./Image/test.jpg" alt="nasza druzyna" />
       <img class="header-slider-image" src="./Image/slider1.jpg" alt="nasza druzyna"/>
@@ -197,7 +197,12 @@
         <div id="map" class="map">
         </div>
         <button style="display:none" id="map-checker-button--return" class='map-button'><img class='map-image-eye' src='Image/eye.png' width='32px' height='32px' alt=''/><span class='map-button--span'>Schowaj mape</span></button>
-
+        <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
       </section>
 
 
@@ -208,5 +213,6 @@
       <script src="./JS/siema.min.js"></script>
       <script src="./JS/siemaImpl.js"></script>
       <script src="./JS/googleMapAnimation.js"></script>
+
   </body>
 </html>
