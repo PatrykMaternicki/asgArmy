@@ -155,14 +155,37 @@
     font-size:4vw;
   }
 }
+@media (max-width:500px){
+  .address-title {
+    font-size: 3.8vw;
+  }
+  .address-wraper {
+    font-size: 3vw;
+  }
+  .address-outer--checkMap button {
+    font-size: 2.6vw;
+  }
+  .address-outer--checkMap {
+    width: 100%;
+  }
+}
 @media (max-width:400px){
+  .address-title {
+    font-size: 4.8vw;
+  }
   .map-button{
     width:85vw;
   }
+  .address-outer--checkMap {
+    width: 98%;
+}
   .map-button--span{
     font-size:8vw;
   }
   .address-outer--checkMap button{
     font-size:2.5vw;
+  }
+  .address-wraper {
+    font-size: 2.8vw;
   }
 }
