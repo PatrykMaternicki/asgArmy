@@ -63,19 +63,12 @@
       <section id="aside-container"   class="mobile-aside-container">
         <aside id="mobile-event-wraper" class="mobile-aside-wraper">
           <section>
-            <div class="aside-event-container">
-              <p class="event-title">Wymysl jakas nazwe eventu</p>
-              <p class="event-item"> <img class="event-item-img" src='./Image/white-map.png' width'32px' height='32px' alt='' />Gdańsk</p>
-              <p class="event-item"><img class="event-item-img" src='./Image/white-calendar.png' width'32px' height='32px' alt='' />20 Pażdziernik</p>
-              <p class="event-item"><img class="event-item-img" src='./Image/white-soldier.png' width'32px' height='32px' alt='' />Ilośc uczestników</p>
-              <p class="event-item"><a class="event-item-link" href="" target="blank_">Dolacz</a></p>
-            </div>
-            <div class="aside-event-container">
-              <p class="event-title">Wymysl jakas nazwe eventu</p>
-              <p class="event-item"> <img class="event-item-img" src='./Image/white-map.png' width'32px' height='32px' alt='' />Gdańsk</p>
-              <p class="event-item"><img class="event-item-img" src='./Image/white-calendar.png' width'32px' height='32px' alt='' />20 Pażdziernik</p>
-              <p class="event-item"><img class="event-item-img" src='./Image/white-soldier.png' width'32px' height='32px' alt='' />Ilośc uczestników</p>
-              <p class="event-item"><a class="event-item-link" href="" target="blank_">Dolacz</a></p>
+            <div data-bind = "foreach: events" class="aside-event-container">
+              <p data-bind="text: eventName" class="event-title">Wymysl jakas nazwe eventu</p>
+              <p  class="event-item"> <img class="event-item-img" src='./Image/map.png' width'32px' height='32px' alt='' /><span data-bind ="text: city">Gdańsk</span></p>
+              <p  class="event-item"><img class="event-item-img" src='./Image/calendar.png' width'32px' height='32px' alt='' /><span data-bind="text: startTime">20 Pażdziernik</span></p>
+              <p  class="event-item"><img class="event-item-img" src='./Image/soldier.png' width'32px' height='32px' alt='' />Ilośc uczestników : <span data-bind="text: attendUser"></span></p>
+              <p class="event-item"><a class="event-item-link" data-bind="attr: { href:link }" target="blank_">Dolacz</a></p>
             </div>
           </section>
       </aside>
@@ -96,6 +89,7 @@
             <p  class="event-item"><img class="event-item-img" src='./Image/soldier.png' width'32px' height='32px' alt='' />Ilośc uczestników : <span data-bind="text: attendUser"></span></p>
             <p class="event-item"><a class="event-item-link" data-bind="attr: { href:link }" target="blank_">Dolacz</a></p>
           </div>
+        </section>
       </aside>
       <section class="article-wraper">
         <article class="article-container">

@@ -34,6 +34,9 @@ window.fbAsyncInit = function() {
       if (response && !response.error) {
         for (var i = 0; i < response.data.length; i++){
 					var record = new Record();
+					if (isPassedDay(response.data[i].start_time)){
+						continue;
+					}
 					record.city = response.data[i].place.location.city;
 				  record.street  = response.data[i].place.location.street;
 					record.attendUser  = response.data[i].attending_count;
@@ -49,10 +52,22 @@ window.fbAsyncInit = function() {
   );
     }
 
-		// getting basic user info
-		function getInfo() {
-      pageInfo();
-      getEventTimes();
+		function isPassedDay(stringDate){
+			var date = new Date (stringDate);
+			var currentDate = new Date();
+			if (date.getYear() < currentDate.getYear()){
+				return true;
+			}
+			if (date.getYear <= currentDate.getYear && date.getMonth() < currentDate.getMonth()){
+				return true;
+			}
+			if (date.getYear <= currentDate.getYear && date.getMonth() <= currentDate.getMonth() && date.getDay() < currentDate.getDay()){
+				return true;
+			}
+			if (date.getYear <= currentDate.getYear && date.getMonth() <= currentDate.getMonth() && date.getDay() <= currentDate.getDay() && date.getHours() < currentDate.getHours() ){
+				return true;
+			}
+
 		}
 		function changeToObjectDate(stringDate){
 			var date = new Date(stringDate);
